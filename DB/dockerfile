@@ -1,0 +1,6 @@
+FROM postgres
+ENV POSTGRES_USER=DeSakke
+ENV POSTGRES_DB=UrlShortener
+ENV POSTGRES_HOST_AUTH_METHOD=trust
+
+COPY init_urlshortnerDB.sql /docker-entrypoint-initdb.d
