@@ -1,7 +1,7 @@
 CREATE DATABASE UrlShortener;
 CREATE TABLE urls 
 (
-    id VARCHAR(10) PRIMARY KEY,
+    id SERIAL PRIMARY KEY,
     urlKey VARCHAR(7), 
     url VARCHAR(255)
 );
